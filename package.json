@@ -1,12 +1,12 @@
 {
-  "name": "pc_builder_backend_prisma_and_postgresql",
+  "name": "doctors-portal-backend-with-prisma-and-postgresql",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node dist/server.js",
-    "dev" : "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build" : "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint . --fix",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
@@ -15,7 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Md Majharul Islam",
   "license": "ISC",
   "devDependencies": {
     "@types/cookie-parser": "^1.4.3",
@@ -24,11 +24,13 @@
     "@types/node": "^20.4.9",
     "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.0.1",
+    "prisma": "^5.2.0",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "@prisma/client": "^5.2.0",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "cookie-parser": "^1.4.6",
